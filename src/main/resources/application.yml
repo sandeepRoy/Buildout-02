@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: buildout02
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/buildout02
+    username: root
+    password: Online#9900
+  jpa:
+    hibernate:
+      ddl-auto: update
+server:
+  error:
+    include-message: always
+    include-stacktrace: always
